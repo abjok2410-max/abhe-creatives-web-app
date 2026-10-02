@@ -1,0 +1,276 @@
+/* ================= GENERAL ================= */
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+background: rgba(0, 0, 0, 0.45);
+backdrop-filter: blur(10px);
+transition: 0.3s;
+}
+
+.navbar-brand {
+font-size: 20px;
+}
+
+.nav-link {
+margin-left: 15px;
+font-weight: 500;
+}
+
+.nav-link:hover {
+color: #ffc107 !important;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+position: relative;
+
+min-height: 100vh;
+
+background-image:
+url("images/school.jpg");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+overflow: hidden;
+}
+
+/* Gradient over the image */
+
+.hero-overlay {
+position: absolute;
+
+top: 0;
+left: 0;
+
+width: 100%;
+height: 100%;
+
+background:
+linear-gradient(
+135deg,
+rgba(5, 25, 70, 0.95),
+rgba(0, 90, 150, 0.75),
+rgba(255, 193, 7, 0.25)
+);
+}
+
+/* Hero text */
+
+.hero-content {
+position: relative;
+z-index: 2;
+}
+
+.hero h1 {
+line-height: 1.15;
+}
+
+.hero p {
+max-width: 700px;
+font-size: 18px;
+}
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+color: #0d6efd;
+font-weight: bold;
+letter-spacing: 2px;
+font-size: 14px;
+}
+
+/* ================= ABOUT ================= */
+
+.about-card {
+padding: 40px;
+
+background: linear-gradient(
+135deg,
+#0d6efd,
+#6610f2
+);
+
+color: white;
+
+border-radius: 20px;
+
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.about-card i {
+font-size: 50px;
+margin-bottom: 20px;
+}
+
+/* ================= ACADEMICS ================= */
+
+.info-card {
+background: white;
+
+padding: 40px 25px;
+
+border-radius: 15px;
+
+height: 100%;
+
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+transition: 0.3s;
+}
+
+.info-card:hover {
+transform: translateY(-8px);
+
+box-shadow:
+0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.info-card i {
+font-size: 50px;
+
+color: #0d6efd;
+
+margin-bottom: 20px;
+}
+
+/* ================= FACILITIES ================= */
+
+.facility-card {
+text-align: center;
+
+padding: 0 0 20px 0;
+
+border: 1px solid #eee;
+
+border-radius: 15px;
+
+overflow: hidden;
+
+transition: 0.3s;
+
+background: white;
+ width: 100%;
+ box-sizing: border-box;
+}
+
+.facility-card img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+display: block;
+max-width: 100%;
+height: 180px;
+box-sizing: border-box;
+}
+
+.facility-card h5 {
+	margin: 15px 10px 0;
+}
+
+.facility-card:hover {
+background: #0d6efd;
+
+color: white;
+
+transform: translateY(-5px);
+}
+
+.facility-card i {
+font-size: 40px;
+
+color: #0d6efd;
+
+margin-bottom: 15px;
+}
+
+.facility-card:hover i {
+color: white;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+background:
+linear-gradient(
+135deg,
+#071d49,
+#0d6efd
+);
+}
+
+.contact-box {
+background: white;
+
+border-radius: 20px;
+
+padding: 40px;
+
+box-shadow:
+0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.contact-box i {
+font-size: 35px;
+
+color: #0d6efd;
+
+margin-bottom: 15px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+background: #061735;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+.hero h1 {
+font-size: 42px;
+}
+
+.hero p {
+font-size: 16px;
+}
+
+.navbar {
+background: rgba(0, 0, 0, 0.85);
+}
+
+}
+
+/* ================= GALLERY ================= */
+
+.gallery-card {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.05);
+}
